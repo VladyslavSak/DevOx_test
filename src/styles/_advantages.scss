@@ -1,0 +1,36 @@
+@import "./utils/extends";
+@import "./utils/variables";
+
+.advantages {
+  height: 347px;
+
+  position: relative;
+}
+
+.advantages-wrapper {
+  display: flex;
+
+  position: absolute;
+  left: 41%;
+  top: -22%;
+}
+
+.advantage {
+  width: 245px;
+  padding: 30px 0;
+
+  @extend %delete-blur;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &:nth-of-type(odd) {
+    background: #EFEAE6;
+  }
+
+  &:nth-of-type(even) {
+    background: #FFFAF6;
+  }
+}

@@ -1,0 +1,36 @@
+@import "./utils/extends";
+@import "./utils/variables";
+
+.bannerwall-section {
+  @extend %delete-blur;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 14px 0 0 13%;
+
+  color: $common-color-text;
+
+  &__title {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 60px;
+  }
+
+  &__subtitle {
+    font-weight: 300;
+    font-size: 40px;
+  }
+
+  &__button {
+    color: #fff;
+    background: $secondary-color;
+    margin-top: 40px;
+    width: 170px;
+
+    &:hover {
+      background: darken($secondary-color, 3%);
+    }
+  }
+}
