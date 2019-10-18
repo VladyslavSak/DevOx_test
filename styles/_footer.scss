@@ -1,0 +1,101 @@
+@import "./utils/variables";
+
+.footer {
+  height: 299px;
+  padding: 40px 130px 12px;
+  background: #221E1A;
+
+  &__menu {
+    list-style: none;
+
+    &--socials {
+      margin-top: 43px;
+    }
+
+    &--title {
+      color: #fff;
+      font-size: 18px;
+    }
+  }
+
+  &__menu-item {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 8px;
+
+    &:first-child {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__menu-links {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.4s;
+
+    &--socials {
+      margin-right: 15px;
+      transition: opacity 0.4s;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+
+  &__copyright {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 42px;
+  }
+
+  &__form {
+    color: #fff;
+    font-size: 16px;
+  }
+}
+
+.footer__links-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__title {
+  font-size: 18px;
+}
+
+.form-block {
+  &__input {
+    background: transparent;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+    width: 100%;
+    font-size: 16px;
+    margin: 30px 0 20px;
+
+    &::placeholder {
+      color: #fff;
+      font-size: 16px;
+    }
+  }
+
+  &__button {
+    padding: 14px 38px;
+    font-weight: 400;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 18px;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
